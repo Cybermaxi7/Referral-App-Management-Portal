@@ -17,11 +17,11 @@ This project, **Referral-App-Management-Portal-Admin**, is a web-based dashboard
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Cybermaxi7/Referral-App-Management-Portal-Admin.git
+    git clone https://github.com/Cybermaxi7/Referral-App-Management-Portal.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd Referral-App-Management-Portal-Admin
+    cd Referral-App-Management-Portal
     ```
 3. Open the `index.html` file in your browser to view the application.
 
