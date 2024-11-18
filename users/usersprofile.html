@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users - Referral App Management Portal</title>
+    <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+    />
+    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/users/css/usersprofile.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Logo and Navigation Links -->
+        <div class="logo-container">
+<!--          <img src="/dashboard/assets/logo.svg" alt="first bank logo" />-->
+          <h2>LOGO</h2>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li onclick="window.location.href='/dashboard'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-1.svg" alt="icon-1" />
+              </div>
+              <p>Dashboard</p>
+            </li>
+            <li onclick="window.location.href='/prospects'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-2.svg" alt="" />
+              </div>
+              <p>Prospects</p>
+            </li>
+            <li onclick="window.location.href='/users'" class="nav-link active">
+              <div>
+                <img src="/dashboard/assets/icon-3.svg" alt="" />
+              </div>
+              <p>Users</p>
+            </li>
+            <li onclick="window.location.href='/branch'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-4.svg" alt="" />
+              </div>
+              <p>Branch</p>
+            </li>
+            <li onclick="window.location.href='/reports'" class="nav-link">
+              <div class="report-logo">
+                <img src="/dashboard/assets/icon-5.svg" alt="" />
+              </div>
+              <p>Reports</p>
+            </li>
+            <li onclick="window.location.href='/admin'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-6.svg" alt="" />
+              </div>
+              <p>Admin</p>
+            </li>
+            <li>
+              <div class="nav-search nav-search-sidebar" style="display: none">
+                <div class="nav-search-icon-container">
+                  <img
+                    src="/dashboard/assets/search-icon.svg"
+                    alt="search icon"
+                  />
+                </div>
+                <input type="text" placeholder="What are you looking for?" />
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Top Navigation Bar -->
+        <div class="top-nav">
+          <!-- Hamburger Menu  -->
+          <button class="hamburger-menu">
+            <img src="/reports/assets/menu.svg" alt="menu icon" />
+          </button>
+
+          <!-- Search bar, user info, etc. -->
+          <div class="nav-search">
+            <div class="nav-search-icon-container">
+              <img src="/dashboard/assets/search-icon.svg" alt="search icon" />
+            </div>
+            <input type="text" placeholder="What are you looking for?" />
+          </div>
+          <div class="user-info">
+            <button class="bell-icon-container">
+              <img src="/dashboard/assets/bell-icon.svg" alt="bell icon" />
+            </button>
+            <button class="avatar-container">
+              <img src="/dashboard/assets/avatar.svg" alt="avatar image" />
+            </button>
+            <p class="user-name">TheEndDeen</p>
+            <button class="arrow-down-container">
+              <img
+                src="/dashboard/assets/arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Content Area (this is the part that changes) -->
+        <div class="content">
+          <!-- Dynamic content goes here -->
+
+          <div class="user-profile-content">
+            <div class="profile-header">
+              <div class="header-left">
+                <h2>User's Profile</h2>
+              </div>
+              <div class="header-right">
+                <img
+                  class="user-profile-arrow"
+                  src="/users/assets/back arrow user-profile.svg"
+                  alt=""
+                />
+                <a href="index.html" class="back-to-users">
+                  <i class="fas fa-arrow-left"></i>Back To Users
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-container">
+              <div class="profile-header-icon">
+                <img
+                  class="user-profile-icon"
+                  src="/users/assets/user profile icon.svg"
+                  alt="Profile Picture"
+                  width="100"
+                  height="100"
+                />
+                <div class="name">Seyi Olanrewaju</div>
+              </div>
+              <div class="profile-info">
+                <div class="info-item">
+                  <label>Name</label>
+                  <span>Seyi Olanrewaju</span>
+                </div>
+                <div class="info-item">
+                  <label>Manager</label>
+                  <span>Seyi Olanrewaju</span>
+                </div>
+                <div class="info-item">
+                  <label>Prospects</label>
+                  <span>5</span>
+                </div>
+                <div class="info-item">
+                  <label>Date Created</label>
+                  <span>04 Jan 2023</span>
+                </div>
+                <div class="info-item">
+                  <label>Phone Number</label>
+                  <span>08965476453</span>
+                  <label class="button-cover">
+                    <button class="edit-profile">
+                      <a class="user-edit-link" href="updateuser.html"
+                        >Edit Profile</a
+                      >
+                    </button>
+                  </label>
+                </div>
+                <div class="info-item">
+                  <label>Email Address</label>
+                  <span>Johnsam@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <label>Branch</label>
+                  <span>Lagos Branch</span>
+                </div>
+                <div class="info-item">
+                  <label>Status</label>
+                  <span id="status" class="status-active">Active</span>
+                  <label class="button-cover">
+                    <button id="suspendBtn" class="suspend">Suspend</button>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="profile-actions"></div>
+          </div>
+
+          <!-- activty section -->
+
+          <!-- Activity Tabs -->
+          <div class="user-profile-activity-tabs">
+            <button class="user-profile-tab active" id="user-active-tab">
+              Activity
+            </button>
+            <button class="user-profile-tab" id="user-prospect-tab">Prospects</a>
+            </button>
+          </div>
+
+          <!-- Activity Container -->
+          <div class="user-profile-container" id="user-table-activity">
+            <div class="user-profile-activity-summary">
+              <h2>Activity Summary Today</h2>
+              <ul>
+                <li>
+                  <p>
+                    <img class="user-profile-dot"
+                    src="/users/assets/userprofile-dot.svg"" alt=""
+                    />&nbsp;&nbsp;&nbsp;Seyi Olanrewaju scheduled a meeting with
+                    the prospects
+                  </p>
+                  <span>9:36 am</span>
+                </li>
+                <li>
+                  <p>
+                    <img
+                      class="user-profile-dot"
+                      src="/users/assets/userprofile-dot.svg"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;Seyi Olanrewaju replied to your comments
+                  </p>
+                  <span>9:35 am</span>
+                </li>
+                <li>
+                  <p>
+                    <img
+                      class="user-profile-dot"
+                      src="/users/assets/userprofile-dot.svg"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;Prospect would like to change product
+                  </p>
+                  <span>9:35 am</span>
+                </li>
+                <li>
+                  <p>
+                    <img
+                      class="user-profile-dot"
+                      src="/users/assets/userprofile-dot.svg"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;Prospect would like a customized plan
+                  </p>
+                  <span>9:35 am</span>
+                </li>
+                <li>
+                  <p>
+                    <img
+                      class="user-profile-dot"
+                      src="/users/assets/userprofile-dot.svg"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;Seyi Olanrewaju scheduled a meeting with
+                    the prospects
+                  </p>
+                  <span>9:36 am</span>
+                </li>
+                <li>
+                  <p>
+                    <img
+                      class="user-profile-dot"
+                      src="/users/assets/userprofile-dot.svg"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;Seyi Olanrewaju scheduled a meeting with
+                    the prospects
+                  </p>
+                  <span>9:36 am</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="user-table-section"
+            id="user-table-prospect"
+            style="display: none"
+          >
+            <table class="user-list">
+              <thead>
+                <tr>
+                  <th>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Email
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Phone Number
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Product Interest
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Date Added
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Status
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Action
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Auto Insurance</td>
+                  <td>01 Jan 2023</td>
+                  <td><span class="user-ongoing-button">Ongoing</span></td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Auto Insurance</td>
+                  <td>01 Jan 2023</td>
+                  <td><span class="user-closed-button">Closed</span></td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Auto Insurance</td>
+                  <td>01 Jan 2023</td>
+                  <td><span class="user-out-button">Out SLA </span></td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Auto Insurance</td>
+                  <td>01 Jan 2023</td>
+                  <td><span class="user-open-button">Open</span></td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts.js"></script>
+    <script src="/users/js/create-user.js"></script>
+  </body>
+</html>

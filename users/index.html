@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users - Referral App Management Portal</title>
+    <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+    />
+    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/users/css/users.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Logo and Navigation Links -->
+        <div class="logo-container">
+<!--          <img src="/dashboard/assets/logo.svg" alt="first bank logo" />-->
+          <h2>LOGO</h2>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li onclick="window.location.href='/dashboard'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-1.svg" alt="icon-1" />
+              </div>
+              <p>Dashboard</p>
+            </li>
+            <li onclick="window.location.href='/prospects'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-2.svg" alt="" />
+              </div>
+              <p>Prospects</p>
+            </li>
+            <li onclick="window.location.href='/users'" class="nav-link active">
+              <div>
+                <img src="/dashboard/assets/icon-3.svg" alt="" />
+              </div>
+              <p>Users</p>
+            </li>
+            <li onclick="window.location.href='/branch'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-4.svg" alt="" />
+              </div>
+              <p>Branch</p>
+            </li>
+            <li onclick="window.location.href='/reports'" class="nav-link">
+              <div class="report-logo">
+                <img src="/dashboard/assets/icon-5.svg" alt="" />
+              </div>
+              <p>Reports</p>
+            </li>
+            <li onclick="window.location.href='/admin'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-6.svg" alt="" />
+              </div>
+              <p>Admin</p>
+            </li>
+            <li>
+              <div class="nav-search nav-search-sidebar" style="display: none">
+                <div class="nav-search-icon-container">
+                  <img
+                    src="/dashboard/assets/search-icon.svg"
+                    alt="search icon"
+                  />
+                </div>
+                <input type="text" placeholder="What are you looking for?" />
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Top Navigation Bar -->
+        <div class="top-nav">
+          <!-- Hamburger Menu  -->
+          <button class="hamburger-menu">
+            <img src="/reports/assets/menu.svg" alt="menu icon" />
+          </button>
+
+          <!-- Search bar, user info, etc. -->
+          <div class="nav-search">
+            <div class="nav-search-icon-container">
+              <img src="/dashboard/assets/search-icon.svg" alt="search icon" />
+            </div>
+            <input type="text" placeholder="What are you looking for?" />
+          </div>
+          <div class="user-info">
+            <button class="bell-icon-container">
+              <img src="/dashboard/assets/bell-icon.svg" alt="bell icon" />
+            </button>
+            <button class="avatar-container">
+              <img src="/dashboard/assets/avatar.svg" alt="avatar image" />
+            </button>
+            <p class="user-name">TheEndDeen</p>
+            <button class="arrow-down-container">
+              <img
+                src="/dashboard/assets/arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Content Area (this is the part that changes) -->
+        <div class="content">
+          <!-- Dynamic content goes here -->
+          <section class="users-section">
+            <h1>Users</h1>
+            <button class="create-user-btn" id="create-user-btn">
+              <a class="create-user-link" href="javascript:void(0)"
+                >+ Create User</a
+              >
+            </button>
+          </section>
+          <!-- user-search container -->
+          <section class="user-whitebackground">
+            <section class="search-section">
+              <div class="search-container">
+                <input
+                  type="text"
+                  placeholder="Search By: Name"
+                  id="search-input"
+                />
+              </div>
+              <button class="find-btn" id="find-btn">Find</button>
+              <!-- <a href="usersprofile.html">userprofile</a> -->
+            </section>
+          </section>
+
+          <section class="tabs-section">
+            <button class="tab all" id="all-btn">All</button>
+            <button class="user-activebutton" id="active-btn">Active</button>
+            <button class="user-suspendedbutton" id="suspended-btn">
+              Suspended
+            </button>
+          </section>
+
+          <!-- user-table -->
+          <section class="user-table-section">
+            <table class="user-list">
+              <thead>
+                <tr>
+                  <th>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Email
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Phone Number
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Branch
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Prospect
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Date Added
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Action
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="user-borderleft">
+                    <img
+                      class="user-seyi-icon"
+                      src="/dashboard/assets/seyi .svg"
+                      alt=""
+                    />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
+                  </td>
+                  <td>seyi@lwl@gmail.com</td>
+                  <td>08965476453</td>
+                  <td>Lagos Branch</td>
+                  <td>05</td>
+                  <td>01 Jan 2023</td>
+                  <td class="user-borderright">
+                    <img
+                      class="user-table-dot"
+                      src="/dashboard/assets/three black dot.svg"
+                      alt=""
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts.js"></script>
+    <script src="/users/js/users.js"></script>
+  </body>
+</html>
